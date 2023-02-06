@@ -15,6 +15,7 @@ A = np.array([
 
 b = np.array([2.95, 1.74, -1.45, 1.32, 1.23, 4.45, 1.61, 3.21, 0.45, -2.75])
 
-x, _, _, _ = np.linalg.lstsq(A, b)
+x = np.linalg.lstsq(A, b)
+x = x[0]
 
 print(f'x1 = {x[0]}, x2 = {x[1]}, x3 = {x[2]}, x4 = {x[3]}')
